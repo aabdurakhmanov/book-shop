@@ -1,1 +1,1 @@
-This is Django REST framework project 
+This is Django REST framework project.
