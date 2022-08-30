@@ -1,5 +1,12 @@
 from django.urls import path
-from .views import ListCategory, DetailCategory, ListBook, DetailBook, ListProduct, DetailProduct, ListUser, DetailUser, ListCart, DetailCart
+from .views import (
+    ListCategory, DetailCategory,
+    ListBook, DetailBook, ListProduct,
+    DetailProduct, ListUser, DetailUser,
+    ListCart, DetailCart
+)
+
+
 urlpatterns = [
     path('categories', ListCategory.as_view(), name='categorie'),
     path('categories/<int:pk>/', DetailCategory.as_view(), name='singlecategory'),
